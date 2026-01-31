@@ -4,7 +4,7 @@ import { Search, ShoppingBag, Heart, User, Menu, X, Bell } from 'lucide-react';
 import { useShop } from '@/app/context/ShopContext';
 import { SignOutButton } from '@clerk/clerk-react';
 // FIXME: Uncomment this line when deploying to Figma/GitHub (see FIGMA_ASSETS_README.md)
-// import logoImage from 'figma:asset/355e85a53f8fd55bb85f4c9cfe98774e87cb561d.png';
+ import logoImage from 'figma:asset/355e85a53f8fd55bb85f4c9cfe98774e87cb561d.png';
 
 export const Header: React.FC = () => {
   const { getTotalItems, user, notifications } = useShop();
@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             {/* FIXME: Uncomment img tag when deploying to Figma/GitHub (see FIGMA_ASSETS_README.md) */}
-            {/* <img src={logoImage} alt="OBO HUB" className="h-10 md:h-12" /> */}
+            { <img src={logoImage} alt="OBO HUB" className="h-10 md:h-12" /> }
             <h1 className="text-2xl font-bold">OBO HUB</h1>
           </Link>
 
